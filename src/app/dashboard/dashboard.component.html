@@ -1,0 +1,13 @@
+<div class="container" style="margin-top: 100px" >
+<p-card header="Color Picker" subheader="Pick your favorite color" [style]="{ width: '360px' }">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="./assets/Color_Picker.jpg" />
+    </ng-template>
+    <p>
+        This module helps to choose your favourite color and see how the content of the pages change dynamically with that color!
+    </p>
+    <ng-template pTemplate="footer">
+        <p-button label="Color Picker" icon="pi pi-check" (click)="goToColorPicker()"></p-button>
+        <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+    </ng-template>
+</p-card></div>

@@ -1,0 +1,25 @@
+/* .loginForm {
+    border: "10px";
+    border-style: outset;
+} */
+
+.container {
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width:80%
+    
+}
+
+h2{
+    text-align: center !important;
+}
+
+.btn-primary {
+    background-color: black;
+    border: none;
+    position: absolute;
+    left: 50%;
+    /* bottom:0% */
+}
