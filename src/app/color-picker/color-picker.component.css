@@ -1,0 +1,19 @@
+.btn-primary {
+    background-color: black;
+    border: none;
+   
+    /* bottom:0% */
+}
+
+.btn-group {
+    position: absolute; 
+    left: 50%;
+}
+
+.save {
+    background: #04AA6D;
+}
+
+.cancel {
+    background: darkred;
+}

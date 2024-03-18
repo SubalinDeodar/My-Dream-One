@@ -11,7 +11,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'my-app';
-  dontShow = false
+  dontShow = false;
+  name:any = ''
   currentDate = this.datePipe.transform(new Date(), 'yyyy-MM-dd HH:mm:ss')
   constructor(private primengConfig: PrimeNGConfig, private datePipe: DatePipe, private router: Router) {
     setInterval(() => {
@@ -21,12 +22,16 @@ export class AppComponent {
 
   ngOnInit() {
       this.primengConfig.ripple = true;
+      this.name = ''
   }
 
   updateDontShow(event: any) {
     console.log(event)
     this.dontShow = event
+    if(event) {
+    this.name = localStorage.getItem('name')
     this.router.navigate(['/dashboard'])
+    }
   }
 
   ngOnChanges() {

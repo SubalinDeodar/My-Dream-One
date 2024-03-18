@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     if(this.username && this.password) {
+      localStorage.setItem('name', this.username)
     this.loggedIn = true
     this.loggedInFlag.emit(true)
     this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Logged In Successfully' });
